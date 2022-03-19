@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cards in Carousel</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="img/logo/WIT Logo - long.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Catelogue<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+
+
+    <header class = "page-header gradient">
+        <div class="container pt-3">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-6">
+                    <h2>
+                        Sample About Section
+                    </h2>
+                    <p>Insert Random paragraph Hackathon 2022</p>
+                    <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Shop Now</a>
+                    <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Contact Us</a>
+                </div>
+                <div class="row top top-buffer">
+                    <div class="col d-flex justify-content-center">
+                        <div class="card" style="width: 25rem;">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="img/carousel/1.1. Navy Shirt.png" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="img/carousel/10.1 Baseball Hat.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="img/carousel/11 Bucket Hat.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="img/carousel/11 Bucket Hat.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="img/carousel/14 Phone Case.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="img/carousel/15 Notebook.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Next</span>
+                                </a>
+                              </div>
+                          </div>
+                    </div>
+            
+                </div>
+            </div>
+        <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 230" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(79.963, 142.18, 237.141, 1)" offset="0%"></stop><stop stop-color="rgba(65.827, 166.344, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,184L48,176.3C96,169,192,153,288,157.2C384,161,480,184,576,172.5C672,161,768,115,864,115C960,115,1056,161,1152,172.5C1248,184,1344,161,1440,134.2C1536,107,1632,77,1728,80.5C1824,84,1920,123,2016,145.7C2112,169,2208,176,2304,149.5C2400,123,2496,61,2592,49.8C2688,38,2784,77,2880,80.5C2976,84,3072,54,3168,61.3C3264,69,3360,115,3456,130.3C3552,146,3648,130,3744,118.8C3840,107,3936,100,4032,103.5C4128,107,4224,123,4320,107.3C4416,92,4512,46,4608,23C4704,0,4800,0,4896,11.5C4992,23,5088,46,5184,76.7C5280,107,5376,146,5472,168.7C5568,192,5664,199,5760,176.3C5856,153,5952,100,6048,88.2C6144,77,6240,107,6336,103.5C6432,100,6528,61,6624,42.2C6720,23,6816,23,6864,23L6912,23L6912,230L6864,230C6816,230,6720,230,6624,230C6528,230,6432,230,6336,230C6240,230,6144,230,6048,230C5952,230,5856,230,5760,230C5664,230,5568,230,5472,230C5376,230,5280,230,5184,230C5088,230,4992,230,4896,230C4800,230,4704,230,4608,230C4512,230,4416,230,4320,230C4224,230,4128,230,4032,230C3936,230,3840,230,3744,230C3648,230,3552,230,3456,230C3360,230,3264,230,3168,230C3072,230,2976,230,2880,230C2784,230,2688,230,2592,230C2496,230,2400,230,2304,230C2208,230,2112,230,2016,230C1920,230,1824,230,1728,230C1632,230,1536,230,1440,230C1344,230,1248,230,1152,230C1056,230,960,230,864,230C768,230,672,230,576,230C480,230,384,230,288,230C192,230,96,230,48,230L0,230Z"></path><defs><linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(75.334, 85.475, 253.079, 1)" offset="0%"></stop><stop stop-color="rgba(11, 91.052, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)" d="M0,115L48,122.7C96,130,192,146,288,126.5C384,107,480,54,576,46C672,38,768,77,864,107.3C960,138,1056,161,1152,141.8C1248,123,1344,61,1440,46C1536,31,1632,61,1728,95.8C1824,130,1920,169,2016,180.2C2112,192,2208,176,2304,153.3C2400,130,2496,100,2592,84.3C2688,69,2784,69,2880,57.5C2976,46,3072,23,3168,15.3C3264,8,3360,15,3456,49.8C3552,84,3648,146,3744,164.8C3840,184,3936,161,4032,153.3C4128,146,4224,153,4320,141.8C4416,130,4512,100,4608,95.8C4704,92,4800,115,4896,115C4992,115,5088,92,5184,88.2C5280,84,5376,100,5472,103.5C5568,107,5664,100,5760,107.3C5856,115,5952,138,6048,130.3C6144,123,6240,84,6336,69C6432,54,6528,61,6624,80.5C6720,100,6816,130,6864,145.7L6912,161L6912,230L6864,230C6816,230,6720,230,6624,230C6528,230,6432,230,6336,230C6240,230,6144,230,6048,230C5952,230,5856,230,5760,230C5664,230,5568,230,5472,230C5376,230,5280,230,5184,230C5088,230,4992,230,4896,230C4800,230,4704,230,4608,230C4512,230,4416,230,4320,230C4224,230,4128,230,4032,230C3936,230,3840,230,3744,230C3648,230,3552,230,3456,230C3360,230,3264,230,3168,230C3072,230,2976,230,2880,230C2784,230,2688,230,2592,230C2496,230,2400,230,2304,230C2208,230,2112,230,2016,230C1920,230,1824,230,1728,230C1632,230,1536,230,1440,230C1344,230,1248,230,1152,230C1056,230,960,230,864,230C768,230,672,230,576,230C480,230,384,230,288,230C192,230,96,230,48,230L0,230Z"></path><defs><linearGradient id="sw-gradient-2" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(85.191, 73.03, 228.034, 1)" offset="0%"></stop><stop stop-color="rgba(11, 255, 237.089, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 100px); opacity:0.8" fill="url(#sw-gradient-2)" d="M0,69L48,61.3C96,54,192,38,288,49.8C384,61,480,100,576,95.8C672,92,768,46,864,53.7C960,61,1056,123,1152,130.3C1248,138,1344,92,1440,72.8C1536,54,1632,61,1728,80.5C1824,100,1920,130,2016,149.5C2112,169,2208,176,2304,184C2400,192,2496,199,2592,184C2688,169,2784,130,2880,130.3C2976,130,3072,169,3168,176.3C3264,184,3360,161,3456,126.5C3552,92,3648,46,3744,49.8C3840,54,3936,107,4032,130.3C4128,153,4224,146,4320,153.3C4416,161,4512,184,4608,195.5C4704,207,4800,207,4896,199.3C4992,192,5088,176,5184,145.7C5280,115,5376,69,5472,53.7C5568,38,5664,54,5760,65.2C5856,77,5952,84,6048,95.8C6144,107,6240,123,6336,138C6432,153,6528,169,6624,180.2C6720,192,6816,199,6864,203.2L6912,207L6912,230L6864,230C6816,230,6720,230,6624,230C6528,230,6432,230,6336,230C6240,230,6144,230,6048,230C5952,230,5856,230,5760,230C5664,230,5568,230,5472,230C5376,230,5280,230,5184,230C5088,230,4992,230,4896,230C4800,230,4704,230,4608,230C4512,230,4416,230,4320,230C4224,230,4128,230,4032,230C3936,230,3840,230,3744,230C3648,230,3552,230,3456,230C3360,230,3264,230,3168,230C3072,230,2976,230,2880,230C2784,230,2688,230,2592,230C2496,230,2400,230,2304,230C2208,230,2112,230,2016,230C1920,230,1824,230,1728,230C1632,230,1536,230,1440,230C1344,230,1248,230,1152,230C1056,230,960,230,864,230C768,230,672,230,576,230C480,230,384,230,288,230C192,230,96,230,48,230L0,230Z"></path><defs><linearGradient id="sw-gradient-3" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(62, 72.327, 243, 1)" offset="0%"></stop><stop stop-color="rgba(46.677, 11, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 150px); opacity:0.7" fill="url(#sw-gradient-3)" d="M0,184L48,180.2C96,176,192,169,288,149.5C384,130,480,100,576,88.2C672,77,768,84,864,80.5C960,77,1056,61,1152,61.3C1248,61,1344,77,1440,88.2C1536,100,1632,107,1728,92C1824,77,1920,38,2016,42.2C2112,46,2208,92,2304,95.8C2400,100,2496,61,2592,65.2C2688,69,2784,115,2880,145.7C2976,176,3072,192,3168,172.5C3264,153,3360,100,3456,72.8C3552,46,3648,46,3744,53.7C3840,61,3936,77,4032,99.7C4128,123,4224,153,4320,161C4416,169,4512,153,4608,149.5C4704,146,4800,153,4896,145.7C4992,138,5088,115,5184,88.2C5280,61,5376,31,5472,38.3C5568,46,5664,92,5760,118.8C5856,146,5952,153,6048,153.3C6144,153,6240,146,6336,134.2C6432,123,6528,107,6624,99.7C6720,92,6816,92,6864,92L6912,92L6912,230L6864,230C6816,230,6720,230,6624,230C6528,230,6432,230,6336,230C6240,230,6144,230,6048,230C5952,230,5856,230,5760,230C5664,230,5568,230,5472,230C5376,230,5280,230,5184,230C5088,230,4992,230,4896,230C4800,230,4704,230,4608,230C4512,230,4416,230,4320,230C4224,230,4128,230,4032,230C3936,230,3840,230,3744,230C3648,230,3552,230,3456,230C3360,230,3264,230,3168,230C3072,230,2976,230,2880,230C2784,230,2688,230,2592,230C2496,230,2400,230,2304,230C2208,230,2112,230,2016,230C1920,230,1824,230,1728,230C1632,230,1536,230,1440,230C1344,230,1248,230,1152,230C1056,230,960,230,864,230C768,230,672,230,576,230C480,230,384,230,288,230C192,230,96,230,48,230L0,230Z"></path></svg>
+  
+        </div>
+    </header>
+    <footer>
+    </footer>
+   
+    <script src="js/boostrap.min.js"></script>
+
+
+    
+    
+   
+
+    
+</body>
+
+
+</html>

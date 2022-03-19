@@ -1,0 +1,17 @@
+html,
+body{
+    height:100%;
+    font-size: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}.top-buffer { 
+    margin-top: 15px;
+}
+.gradient{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(51,51,255,1) 0%, rgba(65,165,255,1) 56%, rgba(67,202,255,1) 83%, rgba(100,197,255,0.9532855378479517) 98%);
+}
+
+.page-header{
+    margin-top: 0.2rem;
+    font-size: 1.25rem;
+    color: #fff
+}
